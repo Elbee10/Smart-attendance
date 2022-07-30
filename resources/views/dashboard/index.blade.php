@@ -1,9 +1,8 @@
 @extends('layouts.indexNav') 
 @section('content')
 <main>
-<h2>hello</h2>
+    <h4>g</h4>
 </main>
-
 @endsection 
 
 @section('css') 

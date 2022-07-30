@@ -9,6 +9,5 @@
 @section('css') 
 
 @endsection 
-
 @section('scripts') 
 @endsection

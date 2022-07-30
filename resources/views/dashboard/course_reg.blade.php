@@ -125,20 +125,12 @@
                 <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#modal">
                     Register course
                 </button>
-               
-
-                
-               
       </form>
 
     </div>
     <div class="clearfix"></div>
     <br><br>
-    <!--footer-->
-   
-
 </main>
-
 @endsection 
 
 

@@ -2,7 +2,7 @@
 
 @section('content')
 <main>
-
+<h6>jello</h6>
 </main>
 @endsection 
 

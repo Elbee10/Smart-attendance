@@ -134,9 +134,6 @@
     </div>
     <div class="clearfix"></div>
     <br><br>
-    <!--footer-->
-   
-
 </main>
 
 @endsection 

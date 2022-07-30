@@ -1,29 +1,46 @@
-@extends('layouts.studentsNav') 
+@extends('layouts.teacherNav') 
 @section('content')
-<div class="container-fluid">
+<div  class="container-fluid "> 
+
 
     <div class="row row-offcanvas row-offcanvas-left">
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+            <div  class="col-xs-6 col-sm-3 sidebar-offcanvas"  >
                 <ul class="list-group panel">
                     <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>SIDE PANEL</b></li>
                     <li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>
                     <li class="list-group-item"><a href="{{route('dashboard-student')}}"><i class="glyphicon glyphicon-home"></i>Dashboard </a></li>
 
                     <li>
-                    <a href="#demo3" class="list-group-item " data-toggle="collapse">Attendance<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    <div class="collapse" id="demo3">
-                        <a href="#SubMenu1" class="list-group-item" data-toggle="collapse">Lectures<span class="glyphicon glyphicon-chevron-right"></span></a>
-                        <div class="collapse list-group-submenu" id="SubMenu1">
-                        <a href="" class="list-group-item">Course1</a>
-                        <a href="#" class="list-group-item">Course 2  </a>
+                    <a href="#department" class="list-group-item " data-toggle="collapse">Attendance<span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <div class="collapse" id="department">
+                        <a href="#ListDepartments" class="list-group-item" data-toggle="collapse">Department<span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <div class="collapse list-group-submenu" id="ListDepartments">
+                        <a href="#computer-science" class="list-group-item" data-toggle="collapse">Computer science<span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <div class="collapse" id="computer-science">
+                            <a href="#SubMenu1" class="list-group-item" data-toggle="collapse">Lecturess<span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <div class="collapse list-group-submenu" id="SubMenu1">
+                            <a href="{{route('attendance')}}" class="list-group-item">Course12</a>
+                            <a href="#" class="list-group-item">Course 2  </a>
+                            </div>
+
+                            <a href="#SubMenu2" class="list-group-item" data-toggle="collapse">Practicals<span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <div class="collapse list-group-submenu" id="SubMenu2">
+                            <a href="" class="list-group-item">Course1</a>
+                            <a href="#" class="list-group-item">Course 2  </a>
+                            </div>
+                        </div>
+                        <a href="#ListDepartments" class="list-group-item" data-toggle="collapse">Biology<span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a href="#ListDepartments" class="list-group-item" data-toggle="collapse">Physics<span class="glyphicon glyphicon-chevron-right"></span></a>
+
                         </div>
 
-                        <a href="#SubMenu2" class="list-group-item" data-toggle="collapse">Practicals<span class="glyphicon glyphicon-chevron-right"></span></a>
-                        <div class="collapse list-group-submenu" id="SubMenu2">
-                        <a href="" class="list-group-item">Course1</a>
-                        <a href="#" class="list-group-item">Course 2  </a>
-                        </div>
+
+
+     
+
+
                     </div>
+         
                     </li>
                     <li class="list-group-item"><a href="{{route('course-registration-form')}}"><i class="glyphicon glyphicon-home"></i>View Course </a></li>
                     <li class="list-group-item"><a href="{{route('course-registration-form')}}"><i class="glyphicon glyphicon-home"></i>Register Course </a></li>
@@ -33,6 +50,7 @@
 
                 </ul>
             </div>
+       
       
 
             <div class="col-xs-12 col-sm-12 content">
@@ -42,7 +60,7 @@
               </div>
               <div class="panel-body">
                 <div class="content-row">
-                  <h2 class="content-row-title">Student Info</h2>
+                  <h2 class="content-row-title">Lecturer's Info</h2>
                   <div class="row">
                       
                     <div class="col-md-12">
@@ -95,6 +113,8 @@
                       
                         
                     </div>
+
+                  
                     
                   </div>
                 </div>
@@ -104,6 +124,8 @@
         </div><!-- content -->
 
 
+                    <!-- Jumbotron
+                                    ================================================== -->
                     
                         
                     </div>
@@ -125,7 +147,9 @@
 
 @section('css') 
 
+
 @endsection 
 
 @section('scripts') 
+
 @endsection
